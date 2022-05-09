@@ -343,6 +343,22 @@ footer{
     border: none;
     background-color: rgba(0, 0, 0, 0);
 }
+#menu_fechar{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    color: white;
+    border: none;
+    visibility: hidden; 
+    position: absolute; 
+    left: 5px; 
+    top: 10px; 
+    padding: 10px; 
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .aparece_sidebar{
     visibility: visible;
     height: 100vh;

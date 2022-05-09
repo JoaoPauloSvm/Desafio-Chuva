@@ -15,6 +15,7 @@ function apareceTexto(){
 let menu = document.getElementById('menu')
 let sideBar = document.getElementsByClassName('fixo')[0]
 let pagina = document.getElementById('pagina')
+let btnFechar = document.getElementById('menu_fechar')
 
 menu.addEventListener('click', apareceSide)
 
@@ -22,4 +23,14 @@ function apareceSide(){
     sideBar.classList.toggle('fixo')
     sideBar.classList.toggle('aparece_sidebar')
     pagina.classList.toggle('sumir_pagina')
+    btnFechar.style.visibility = 'visible'
+}
+
+btnFechar.addEventListener('click', retornar)
+
+function retornar(){
+    sideBar.classList.toggle('fixo')
+    sideBar.classList.toggle('aparece_sidebar')
+    pagina.classList.toggle('sumir_pagina')
+    btnFechar.style.visibility = 'hidden'
 }
