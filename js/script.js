@@ -6,6 +6,7 @@ btn.addEventListener('click', apareceTexto)
 function apareceTexto(){
     texto.classList.toggle('js')
     texto.classList.toggle('visibilty')
+    btn.innerHTML == 'Ver mais' ? btn.innerHTML = 'Ver menos' : btn.innerHTML = 'Ver mais'
 }
 
 
