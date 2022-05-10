@@ -448,6 +448,10 @@ footer{
 
 /*Aplicando responsividade*/
 @media(max-width: 1222px){
+    #formulario{
+        position: static;
+        margin-top: 15px;
+    }
     #menu{
         visibility: visible;
     }
