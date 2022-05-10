@@ -34,3 +34,19 @@ function retornar(){
     pagina.classList.toggle('sumir_pagina')
     btnFechar.style.visibility = 'hidden'
 }
+
+/*manipulando formulario*/
+
+let btnForm = document.getElementById('formulario')
+let discussoes = document.getElementById('discussoes_share')
+let form = document.getElementById('form')
+let enviar = document.getElementById('enviar')
+
+btnForm.addEventListener('click', manipulaForm)
+enviar.addEventListener('click', envioSucesso)
+
+function manipulaForm(){
+    btnForm.style.visibility = 'hidden'
+    discussoes.style.display = 'none'
+    form.style.display = 'flex'
+}

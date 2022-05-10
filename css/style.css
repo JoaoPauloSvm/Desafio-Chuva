@@ -314,7 +314,64 @@ footer{
     opacity: 65%;
 }
 
+/*estilizando formulario*/
+
+#form{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#form > p{
+    padding-top: 10px;
+}
+#form > form{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+#form > form > label{
+    color: #ed7839;
+    font-weight: bold;
+}
+.margin{
+    margin-top: 10px;
+    outline: none;
+}
+#form > form > input, #text_area{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#italico{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaf1f2;
+    border: 1px solid #ccc;
+    border-top: none;
+    align-items: center;
+}
+#italico > button{
+    background-color: #ed7839;
+    border: none;
+    color: white;
+    padding: 10px 5rem;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
 /*Adicionando efeitos nos botões*/
+#italico > button:hover{
+    box-shadow: 1px 1px 10px orangered;
+    text-shadow: 1px 1px 1px #ccc;
+}
+#formulario:hover{
+    text-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 5px orangered;
+}
 .menu:hover{
     border-left: 7px solid #ed7839;
     background-color: #fdf1eb;
@@ -375,6 +432,18 @@ footer{
 }
 .sumir_pagina{
     visibility: hidden;
+}
+#formulario{
+    visibility: visible;
+    cursor: pointer;
+    position: absolute;
+    top: 173.8vh;
+    right: 80vh;
+    padding: 10px 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 3px;
 }
 
 /*Aplicando responsividade*/
