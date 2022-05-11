@@ -436,9 +436,8 @@ footer{
 #formulario{
     visibility: visible;
     cursor: pointer;
-    position: absolute;
-    top: 173.8vh;
-    right: 80vh;
+    position: static;
+    margin-top: 15px;
     padding: 10px 15px;
     background-color: orangered;
     color: white;
@@ -448,10 +447,6 @@ footer{
 
 /*Aplicando responsividade*/
 @media(max-width: 1222px){
-    #formulario{
-        position: static;
-        margin-top: 15px;
-    }
     #menu{
         visibility: visible;
     }
@@ -474,6 +469,9 @@ footer{
     }
     #title_button > h2{
         font-size: 20px;
+    }
+    #collapseExample{
+        display: none;
     }
 }
 @media(max-width: 936px){
